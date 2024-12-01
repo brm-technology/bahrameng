@@ -1,0 +1,28 @@
+.contact-form-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #dbe2df;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Center the Contact Us heading and add margin */
+  .contact-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Add margin between form fields */
+  .form-group-custom {
+    margin-bottom: 15px;
+  }
+  
+  /* Align the submit button to the right with margin */
+  .submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  

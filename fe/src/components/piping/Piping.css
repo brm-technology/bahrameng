@@ -1,0 +1,37 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 65%; /* First column is 40%, second column is 60% */
+    grid-template-rows: 65% 35%; /* First row is 60%, second row is 30% */
+    gap: 20px;
+    padding: 20px;
+    height: 100vh; /* Set the grid container height to fill the viewport */
+  }
+  
+  .grid-box {
+    background-color: #aaaeeb;
+    padding: 20px; /* Adjusted padding for better spacing */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow: auto; /* Enable scrolling if content exceeds box height */
+    display: block; /* Use block display to allow content to flow naturally */
+  }
+  
+  .grid-box:nth-child(2) {
+    background-color: #fff; /* Different background color for the top-right box if needed */
+  }
+  
+  /* Media query to switch to 4 rows and 1 column when box width becomes less than 400px */
+  @media (max-width: 1000px) {
+    .grid-container {
+      grid-template-columns: 1fr; /* Switch to 1 column */
+      grid-template-rows: repeat(4, 1fr); /* Four rows, each taking equal space */
+      height: auto; /* Adjust height for single-column layout */
+    }
+  
+    .grid-box {
+      height: auto; /* Adjust height for the new single-column layout */
+    }
+  }
+  
+  

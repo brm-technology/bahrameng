@@ -1,0 +1,79 @@
+.converter-container {
+    max-width: 100%; /* Full width of the box */
+    height: 100%; /* Allow it to take full height of the box */
+    padding: 10px; /* Padding inside the container */
+    border-radius: 10px; /* Rounded corners */
+    overflow: auto; /* Add scroll if content exceeds height */
+    
+    /* Added styles for centering */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+  }
+  
+  .converter-category {
+    margin-bottom: 10px; /* Reduced margin */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .converter-category select {
+    padding: 6px; /* Further reduced padding */
+    border-radius: 5px;
+    border: 1px solid #0f0f0f;
+    background-color: #fff;
+  }
+  
+  .converter-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center inputs horizontally */
+    width: 100%; /* Ensure inputs take full width */
+  }
+  
+  .converter-left,
+  .converter-right {
+    flex: 1; /* Allow these to grow equally */
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px; /* Reduced margin */
+    align-items: center; /* Center items within these columns */
+  }
+  
+  .converter-unit-select {
+    margin-bottom: 5px;
+  }
+  
+  .converter-left select,
+  .converter-left input,
+  .converter-right select,
+  .converter-right input {
+    margin: 4px; /* Reduced margin */
+    padding: 4px; /* Further reduced padding */
+    border-radius: 5px;
+    border: 1px solid #030303;
+  }
+  
+  .converter-left select,
+  .converter-right select {
+    width: 100%; /* Full width for selects */
+  }
+  
+  .converter-left input,
+  .converter-right input {
+    width: 100%; /* Full width for inputs */
+  }
+  
+  .converter-right input {
+    background-color: #f0f0f0;
+  }
+  
+  .converter-separator {
+    width: 1px;
+    background-color: #aaa;
+    height: 100%;
+    margin: 0 5px; /* Reduced margin */
+    border-radius: 5px;
+  }
+  
