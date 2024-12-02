@@ -64,7 +64,7 @@ ROOT_URLCONF = 'brmproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'fe'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
